@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/about-me-style.css">
+
+
+
+</head>
+
+<body>
+    <header class="header">
+
+        <h3 class="logo">KURTWEBSITE</h3>
+
+        <nav id="navbar">
+            <a href="index.html">HOME</a>
+            <a href="about-me.html">ABOUT ME</a>
+            <a href="priority.html">MY PRIORITY</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <script>
+            $(document).ready(function () {
+                $('#menu-icon').click(function () {
+                    $('#navbar').toggle(); // Show/hide options
+                });
+            });
+        </script>
+    </header>
+
+    <section id="aboutme" class="aboutme">
+        <div class="content">
+            <h1>PASSION</h1><br><br>
+            <h2>
+                I want to become a DJ because I've always been drawn to remix genres. I've studied how to mix song
+                BPMs of songs align perfectly. I've also learned how to hype up the crowd and deliver a flawless
+                performance on stage
+            </h2>
+        </div>
+        <div class="image-container">
+            <div class="img-container">
+                <img class="pic1" src="images/picture-4.jpeg" alt="akolang" title="click to play a video">
+                <img class="play" src="images/playbtn.png" alt="" onclick="playVideo()" title="click to play a video">
+                <img class="gradient" src="" alt="">
+            </div>
+            <div class="img-container">
+                <img class="pic2" src="images/picture-2.jpeg" alt="akolang" title="click to play a video">
+                <img class="play" src="images/playbtn.png" alt="" onclick="playVideo1()" title="click to play a video">
+                <img class="gradient" src="" alt="">
+            </div>
+            <div class="img-container">
+                <img class="pic3" src="images/picture-3.jpeg" alt="akolang" title="click to play a video">
+                <img class="play" src="playbtn.png" alt="" onclick="playVideo2()" title="click to play a video">
+                <img class="gradient" src="" alt="">
+            </div>
+        </div>
+
+        <div id="hidden" class="video-container">
+            <img class="icon" src="images/icon.png" alt="" title="close video" onclick="closeVideo()">
+
+
+            <video id="video" controls>
+                <source src="videos/Vedio1.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+        <div id="hidden1" class="video-container1">
+            <img class="icon1" src="images/icon.png" alt="" title="close video" onclick="closeVideo1()">
+
+            <video id="video1" controls>
+                <source src="videos/Vedio5.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+        <div id="hidden2" class="video-container2">
+            <img class="icon2" src="images/icon.png" alt="" title="close video" onclick="closeVideo2()">
+
+            <video id="video2" controls>
+                <source src="videos/FullVedio4.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+    </section>
+    <script>
+        function playVideo() {
+            var video = document.getElementById("video");
+            var hidden = document.getElementById("hidden");
+            video.play();
+            hidden.style.display = "flex";
+        }
+
+        function playVideo1() {
+            var video1 = document.getElementById("video1");
+            var hidden1 = document.getElementById("hidden1");
+            video1.play();
+            hidden1.style.display = "flex";
+        }
+
+        function playVideo2() {
+            var video2 = document.getElementById("video2");
+            var hidden2 = document.getElementById("hidden2");
+            video2.play();
+            hidden2.style.display = "flex";
+        }
+
+
+        function closeVideo() {
+            var video = document.getElementById("video");
+            var hidden = document.getElementById("hidden");
+            video.pause();
+            hidden.style.display = "none";
+        }
+
+        function closeVideo1() {
+            var video1 = document.getElementById("video1");
+            var hidden1 = document.getElementById("hidden1");
+            video1.pause();
+            hidden1.style.display = "none";
+        }
+
+        function closeVideo2() {
+            var video2 = document.getElementById("video2");
+            var hidden2 = document.getElementById("hidden2");
+            video2.pause();
+            hidden2.style.display = "none";
+        }
+    </script>
+</body>

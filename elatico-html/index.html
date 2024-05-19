@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/index-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h3 class="logo">KURTWEBSITE</h3>
+
+        <nav id="navbar">
+            <a href="index.html">HOME</a>
+            <a href="about-me.html">ABOUT ME</a>
+            <a href="priority.html">MY PRIORITY</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <script>
+            $(document).ready(function () {
+                $('#menu-icon').click(function () {
+                    $('#navbar').toggle(); // Show/hide options
+                });
+            });
+        </script>
+    </header>
+
+    <section id="home" class="home">
+        <div class="content">
+            <h3>Hi Everyone</h3>
+            <h1>I'm<span> Kurt Dominic Lugo Elatico</span></h1>
+            <h1>DJ Music Producer</h1><br><br>
+            <h2>
+                I started to practice DJing since 2013. My dream is to create my own music and improve my skills and
+                performance to mix and produce music. My plan soon is to hype up the audience of my mashup performances
+                in the club or bigger performances like the Main Stage.
+            </h2>
+            <br><br>
+            <div class="icon">
+                <img src="images/CrossDJIcon.png" alt="akolang" title="CrossDJ">
+                <img src="images/WeDJIcon.jpeg" alt="akolang" title="WeDJ">
+                <img src="images/Virtualdjicon.jpeg" alt="akolang" title="Virtual">
+                <img src="images/Caustic3Icon.jpeg" alt="akolang" title="Caustic3Pro">
+                <img src="images/FLstudioIcon.jpeg" alt="akolang" title="FL-Studio">
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="images/Picture_1.jpg" alt="akolang">
+        </div>
+    </section>
+</body>
+
+</html>
